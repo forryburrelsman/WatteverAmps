@@ -21,6 +21,7 @@ public class ConnectionController {
     }
 
 
+
     //display email sign-up form
 //    @GetMapping
 //    public void emailSignUpForm(@RequestParam String name, @RequestParam String email) {
