@@ -1,11 +1,52 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="https://www.thymeleaf.org/">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
+<head th:replace="fragments :: head"></head>
 <body class="container">
+<header th:replace="fragments :: header"></header>
+<div class="container" align="center">
+    <nav th:replace="fragments :: nav"></nav>
+//give columns a name/id and add styling to css file for padding
+    <table>
+        <tr>
+            <th><img th:src="@{images/Amp+11.jpg}" width="300" class="w3-image">
+                <div align="center">
+                    <h4>AMP #11</h4>
+                </div></th>
+            <th>
+                <img th:src="@{images/Amp+14.jpeg}" width="300" class="w3-image">
+                <div align="center">
+                    <h4>AMP #14</h4>
+                </div>
+            </th>
+            <th>
+                <img th:src="@{images/Amp+15.jpg}" width="300" class="w3-image">
+                <div align="center">
+                    <h4>AMP #15</h4>
+                </div>
+            </th>
+        </tr>
+    </table>
+
+            <img th:src="@{images/Amp+19.jpg}" width="300" class="w3-image">
+            <div class="w3-container">
+                <h4>AMP #19</h4>
+            </div>
+            <img th:src="@{images/Amp+24+Sony+Wood+Panel.png}" width="300" class="w3-image">
+            <div class="w3-container">
+                <h4>AMP #24</h4>
+            </div>
+            <img th:src="@{images/Amp+25.png}" width="300" class="w3-image">
+            <div class="w3-container">
+                <h4>AMP #25</h4>
+            </div>
+
+            <img th:src="@{images/Radio+23+Panasonic+Yellow+BBIGGER.png}" width="300" class="w3-image">
+            <div class="w3-container">
+                <h4>AMP #23</h4>
+            </div>
+    </div>
 
 
+</div>
 </body>
 </html>

@@ -8,6 +8,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping
 public class CommerceController {
 
+    @GetMapping
+    public String homePage() {
+        return "home";
+    }
+
     @GetMapping("collection")
     public String collectionPage(){
         return "collection";
@@ -17,5 +22,8 @@ public class CommerceController {
     public String commercePage(){
         return "commerce";
     }
+
+    @GetMapping("creation")
+    public String creation() {return "creation";}
 
 }
