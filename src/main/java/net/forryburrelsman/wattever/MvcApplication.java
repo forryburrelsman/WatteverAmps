@@ -1,4 +1,4 @@
-package net.wattever;
+package net.forryburrelsman.wattever;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

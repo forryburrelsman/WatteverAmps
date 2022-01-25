@@ -1,4 +1,4 @@
-package net.wattever.models;
+package net.forryburrelsman.wattever.models;
 
 import org.springframework.web.bind.annotation.ModelAttribute;
 

@@ -1,4 +1,4 @@
-package net.wattever.controllers;
+package net.forryburrelsman.wattever.controllers;
 
 import com.stripe.Stripe;
 import com.stripe.param.billingportal.SessionCreateParams;

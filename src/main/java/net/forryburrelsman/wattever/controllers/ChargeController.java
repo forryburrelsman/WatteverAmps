@@ -1,9 +1,9 @@
-package net.wattever.controllers;
+package net.forryburrelsman.wattever.controllers;
 
 import com.stripe.exception.StripeException;
 import com.stripe.model.Charge;
-import net.wattever.data.ChargeRequest;
-import net.wattever.models.StripeService;
+import net.forryburrelsman.wattever.data.ChargeRequest;
+import net.forryburrelsman.wattever.models.StripeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

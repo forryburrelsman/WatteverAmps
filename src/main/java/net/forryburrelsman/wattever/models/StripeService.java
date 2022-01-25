@@ -1,12 +1,9 @@
-package net.wattever.models;
+package net.forryburrelsman.wattever.models;
 
 import com.stripe.Stripe;
-import com.stripe.exception.CardException;
 import com.stripe.exception.StripeException;
-import com.stripe.exception.oauth.InvalidRequestException;
 import com.stripe.model.Charge;
-import net.wattever.data.ChargeRequest;
-import org.springframework.beans.factory.annotation.Value;
+import net.forryburrelsman.wattever.data.ChargeRequest;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.PostConstruct;

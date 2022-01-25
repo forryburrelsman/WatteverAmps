@@ -1,11 +1,10 @@
-package net.wattever.data;
+package net.forryburrelsman.wattever.data;
 
-import net.wattever.models.Subscription;
+import net.forryburrelsman.wattever.models.Subscription;
 
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.concurrent.Flow;
 
 public class subscriberData {
 

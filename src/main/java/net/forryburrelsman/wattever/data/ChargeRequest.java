@@ -1,4 +1,4 @@
-package net.wattever.data;
+package net.forryburrelsman.wattever.data;
 
 
 public class ChargeRequest {
