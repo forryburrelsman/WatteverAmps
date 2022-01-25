@@ -8,10 +8,11 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.nio.file.Paths;
 
-@Controller
+@RestController
 @RequestMapping
 public class CommerceController {
 
@@ -21,16 +22,15 @@ public class CommerceController {
     }
 
 
+    @Value("${stripe.apikey}")
+    private String stripePublicKey;
 
-//    @Value("${STRIPE_PUBLIC_KEY}")
-    private String stripePublicKey = "";
-
-    @GetMapping("check-out")
+    @GetMapping("stripe")
     public String checkout(Model model){
         model.addAttribute("amount", 50 * 100); // in cents
         model.addAttribute("stripePublicKey", stripePublicKey);
         //model.addAttribute("currency", ChargeRequest.Currency.EUR);
-        return "check-out";
+        return "hello " + stripePublicKey;
     }
 
 //    staticFiles.externalLocation(
