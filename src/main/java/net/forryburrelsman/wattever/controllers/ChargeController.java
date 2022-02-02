@@ -23,11 +23,11 @@ public class ChargeController {
                 throws StripeException, AuthenticationException {
             chargeRequest.setDescription("Example charge");
             chargeRequest.setCurrency(ChargeRequest.Currency.EUR);
-            Charge charge = paymentsService.charge(chargeRequest);
-            model.addAttribute("id", charge.getId());
-            model.addAttribute("status", charge.getStatus());
-            model.addAttribute("chargeId", charge.getId());
-            model.addAttribute("balance_transaction", charge.getBalanceTransaction());
+            //Charge charge = paymentsService.charge(chargeRequest);
+//            model.addAttribute("id", charge.getId());
+//            model.addAttribute("status", charge.getStatus());
+//            model.addAttribute("chargeId", charge.getId());
+//            model.addAttribute("balance_transaction", charge.getBalanceTransaction());
             return "result";
         }
 

@@ -15,10 +15,13 @@ repositories {
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
-	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation ('org.springframework.boot:spring-boot-starter-web') {
+		exclude group: 'org.springframework.boot', module: 'sspring-boot-starter-json'
+	}
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	implementation 'com.stripe:stripe-java:20.97.0'
+	implementation 'com.google.code.gson:gson'
 }
 
 test {
